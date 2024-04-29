@@ -32,23 +32,28 @@
 ## 🏗 Project Structure
 <systime module>
 1-1. class SystemTime
+ 
   - A class that implements the system time of the OS.
   - Synchronizes the threads currently running in the program based on the system time.
   
 <process module>
 2-1. class Status
+ 
   - An Enum that holds the possible status information of a Process.
   
 2-2. class Process
+
   - A Class that implements a Process.
   - Has functions to update status information and calculate final execution results.
 
 2-3. class Core
+
   - A Class that implements a CPU Core.
   - Responsible for the actual Scheduling tasks.
   - Has a Ready Queue and is implemented to allow for different Scheduling algorithms for each core.
 
 <simulator module>
 3-1. class SimulationOS
+ 
   - A class that provides an environment where Scheduling Simulation can be performed.
   - Responsible for process creation/assignment, scheduling record storage, checking termination conditions, and monitoring each core's load.
